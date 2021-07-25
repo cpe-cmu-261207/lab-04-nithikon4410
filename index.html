@@ -1,19 +1,57 @@
-<!DOCTYPE html>
-<html lang="en">
-
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script src='script.js' defer></script>
-	<title>Lab 04</title>
-	<!-- <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"> -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='script.js' defer></script>
+    <title>List</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap" rel="stylesheet">
+    <style>
+        body {
+          background-color: skyblue;
+        }
+        </style>
+    
 </head>
 
-<body>
-	<h1>Minimal Todo List</h1>
-	<input  type='text'>
-	<button>+</button>
-</body>
 
-</html>
+<body class="">
+    
+    <div class="box mt-8 bg-white max-w-screen-md mx-auto  rounded-xl ring-2 ring-skyblue-300   ">
+
+        <h1 align = 'center' class="pt-6" style="font-family: 'Otomanopee One', sans-serif"  >Minimal Todo List</h1>
+        </a>
+
+
+        <div class="flex justify-center">
+            <div class="pr-6 pt-6">
+                <input class="inputCl" type='text' id="TaskInput" onkeypress="charCodeCheck(event)">
+                
+
+            </div>
+            <div class=" ring-2 ring-skyblue-300 rounded-xl px-2 ">
+                
+                <button class="border-1 py-2  rounded-xl" id="enter" onclick="EnteringInput()">+</button>
+
+            </div>
+
+        </div>
+        <div class="pt-6 ">
+            <div>
+                <h3 id="taskList"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Text :<div id="TaskBox" align = 'center'></div></h3> </div>
+            
+        </div>
+
+
+        <div class="pt-6">
+            <h3 id="completedList"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Textcompleted :</h3>
+
+
+        </div>
+        <div id="CompletedBox" class=" rounded  my-2 p-1" align = 'center'>
+        </div>
+    </div>
+
+</body>
